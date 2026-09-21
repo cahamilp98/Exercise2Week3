@@ -12,11 +12,11 @@ namespace Exercise2Week3.Migrations
 {
     [DbContext(typeof(Exercise2Week3Context))]
     [Migration("20260914002019_accountholders")]
-    partial class accountholders
+    partial class accountholders : Migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
-        {
+        {","explanation":"Make the migration designer class inherit from Migration so BuildTargetModel can override the base method."}
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "10.0.12")
